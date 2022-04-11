@@ -1,9 +1,6 @@
 # Shopping-Cart
 #### Description:
 This project was a week 19 exercise. Using Strapi, I made a simple shopping cart.
-
-
-<img src= "Eye.png" width='300'/>
  
 #### Installation:
  
