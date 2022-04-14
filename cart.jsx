@@ -97,7 +97,7 @@ const Products = (props) => {
 
   const addToCart = (e) => {
     let name = e.target.name;
-    let item = items.filter((item) => item.name === name);
+    let item = items.find((item) => item.name === name);
     if (item.instock < 1) {
       alert('Out of stock!');
       return;
@@ -185,7 +185,7 @@ console.log(items);
     console.log('restocking...');
     apiCall(url);
     // To Do: rename data to something helpful so we can just call something.data.map()
-    let newItems = data.data.map((newItem) => {
+    let newItems = data.map((newItem) => {
       console.log(newItem);
       let { name, country, cost, instock } = newItem.attributes;
       return { name, country, cost, instock };
