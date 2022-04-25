@@ -184,7 +184,6 @@ console.log(items);
   const restockProducts = (url) => {
     console.log('restocking...');
     apiCall(url);
-    // To Do: rename data to something helpful so we can just call something.data.map()
     let newItems = data.map((newItem) => {
       console.log(newItem);
       let { name, country, cost, instock } = newItem.attributes;
